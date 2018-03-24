@@ -4,7 +4,7 @@ class UDPClient
 {
    public static void main(String args[]) throws Exception
    {
-      System.out.println("Type some message:");
+      System.out.print("Type some message:");
       BufferedReader inFromUser =
          new BufferedReader(new InputStreamReader(System.in));
       DatagramSocket clientSocket = new DatagramSocket();
