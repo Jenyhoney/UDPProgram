@@ -9,8 +9,7 @@ class UDPClient{
       byte[] sendData = new byte[1024];
       byte[] receiveData = new byte[1024];
       boolean flag=true;
-      while(flag)
-       {
+      while(flag){
       String sentence = inFromUser.readLine();
       sendData = sentence.getBytes();
       DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, IPAddress, 9876);
